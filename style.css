@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norse-Bold.woff") format("woff"),
+        url("fonts/Norse-Bold.woff2") format("woff2");
+}
+
+body
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* left section */
+.left-section
+{
+    flex: 3;
+    min-width: 260px;
+    height: 100vh;
+    position: relative;
+}
+
+.left-background
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.left-logo-section
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo
+{
+    height: 140px;
+}
+
+.header
+{
+    font-family: "Norse Bold", Arial;
+    color: white;
+    font-size: 6rem;
+}
+
+.left-footer
+{
+    position: absolute;
+    bottom: 10px;
+    color: #B5BEA5;
+    text-align: center;
+    width: 100%;
+}
+
+.left-footer > span
+{
+    text-decoration: underline;
+}
+
+/* right section */
+.right-section
+{
+    flex: 5;
+    background-color: #F9FAFB;
+    min-width: 500px;
+}
+
+.right-section > *
+{
+    padding-left: 50px;
+    background-color: #F9FAFB;
+}
+
+.right-top-section
+{
+    height: 375px;
+    padding-top: 150px;
+}
+
+.right-p
+{
+    font-size: clamp(1.4rem, 1.7vw, 1.9rem);
+    font-weight: bold;
+    width: 88%;
+    max-width: 935px;
+}
+
+.right-top-section > p:nth-child(3)
+{
+    margin-top: 25px;    
+}
+
+.right-form-section
+{
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    min-width: 550px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 3px 2px 4px rgba(0,0,0,0.3);
+}
+
+.right-form
+{
+    display: flex;
+    column-gap: 80px;
+    margin-top: 30px;
+}
+
+.form-column
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.form-row label
+{
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.form-row > input
+{
+    padding: 5px 6px;
+    font-size: 16px;
+    width: 100%;
+    border: #E5E7EB 1px solid;
+    border-radius: 5px;
+}
+
+.form-row > input:focus
+{
+    outline: 1.5px solid #5579E1;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-row > input:user-invalid
+{
+    outline: 1.5px solid red;
+}
+
+.right-bottom-section > *
+{
+    margin-top: 40px;
+}
+
+.right-bottom-section > button
+{
+    padding: 14px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+.right-bottom-section > p > a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+
